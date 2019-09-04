@@ -20,13 +20,12 @@ class ApiProvider {
     }
     
     private let urlSession = URLSession.shared
-    
+    private let subredditURL = URL(string: "https://www.reddit.com/r/swift/.json")!
     private let jsonDecoder: JSONDecoder = {
         let jsonDecoder = JSONDecoder()
         jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
         return jsonDecoder
     }()
-    
     
     private func fetchResources<T: Decodable>(url: URL, completion: @escaping (Result<T, APIServiceError>) -> Void) {
         guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {
@@ -56,6 +55,10 @@ class ApiProvider {
                 completion(.failure(.apiError))
             }
             }.resume()
+    }
+    
+    public func fetchSwiftSubredditData(result: @escaping (Result<SwiftSubreddit, APIServiceError>) -> Void) {
+        fetchResources(url: subredditURL, completion: result)
     }
 }
 
