@@ -9,28 +9,15 @@
 import Foundation
 
 protocol PostViewModelProtocol: class {
-    var title: String? { get }
-    var titleDidChange: ((PostViewModelProtocol) -> ())? { get set }
+    var title: String! { get set }
     init(post: Post)
-    func showGreeting()
 }
 
 class PostViewModel: PostViewModelProtocol {
     let post: Post
-    
-    var title: String? {
-        didSet {
-            self.titleDidChange?(self)
-        }
-    }
-    
-    var titleDidChange: ((PostViewModelProtocol) -> ())? 
-    
+    var title: String!
     required init(post: Post) {
         self.post = post
-    }
-    
-    func showGreeting() {
         self.title = post.title
     }
 }
