@@ -106,16 +106,16 @@
 		30F1F7BC23205BAA001E6B9B /* Loblaws Assignment */ = {
 			isa = PBXGroup;
 			children = (
-				30B54CBD2322ECA7007381A3 /* ViewModels */,
-				30B54CBA2322EB29007381A3 /* Views */,
-				30F1F7D823205FB3001E6B9B /* Models */,
-				30F1F7D523205E5B001E6B9B /* Extensions */,
-				30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */,
-				30F1F7C123205BAA001E6B9B /* Main.storyboard */,
-				30F1F7C423205BAE001E6B9B /* Assets.xcassets */,
-				30F1F7C623205BAE001E6B9B /* LaunchScreen.storyboard */,
 				30F1F7C923205BAE001E6B9B /* Info.plist */,
 				30F1F7CF23205D64001E6B9B /* ApiProvider.swift */,
+				30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */,
+				30F1F7C423205BAE001E6B9B /* Assets.xcassets */,
+				30F1F7D523205E5B001E6B9B /* Extensions */,
+				30F1F7C623205BAE001E6B9B /* LaunchScreen.storyboard */,
+				30F1F7C123205BAA001E6B9B /* Main.storyboard */,
+				30F1F7D823205FB3001E6B9B /* Models */,
+				30B54CBD2322ECA7007381A3 /* ViewModels */,
+				30B54CBA2322EB29007381A3 /* Views */,
 			);
 			path = "Loblaws Assignment";
 			sourceTree = "<group>";
