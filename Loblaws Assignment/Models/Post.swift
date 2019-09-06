@@ -10,18 +10,18 @@ import Foundation
 
 public struct Post: Decodable {
     public let title: String
-    public let author: String
+    public let thumbnail: String
     
     enum CodingKeys: String, CodingKey {
         case data = "data"
         case title = "title"
-        case author = "author"
+        case thumbnail = "thumbnail"
     }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         let data = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
         title = try data.decode(String.self, forKey: .title)
-        author = try data.decode(String.self, forKey: .author)
+        thumbnail = try data.decode(String.self, forKey: .thumbnail)
     }
 }

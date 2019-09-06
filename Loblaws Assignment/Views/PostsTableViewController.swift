@@ -47,11 +47,14 @@ class PostsTableViewController: UITableViewController {
         return postViewModels.count
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return postViewModels[indexPath.row].heightForRow
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
         
-        postViewModels[indexPath.row].configure(cell)
+        cell.configure(with: postViewModels[indexPath.row])
         
         return cell
     }

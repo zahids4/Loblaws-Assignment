@@ -9,9 +9,10 @@
 import UIKit
 
 protocol PostViewModelProtocol: class {
-    var title: String! { get set }
-    var author: String! { get set }
-    func configure(_ cell: UITableViewCell)
+    var title: String! { get }
+    var thumbnail: String! { get }
+    var hasThumbnail: Bool! { get }
+    var heightForRow: CGFloat! { get }
     init(post: Post)
 }
 
@@ -19,18 +20,16 @@ class PostViewModel: PostViewModelProtocol {
     let post: Post
     
     var title: String!
-    var author: String!
-    
-    func configure(_ cell: UITableViewCell) {
-        cell.textLabel!.text = title
-        cell.detailTextLabel!.text = author
-    }
-    
+    var thumbnail: String!
+    var hasThumbnail: Bool!
+    var heightForRow: CGFloat!
     
     required init(post: Post) {
         self.post = post
         self.title = post.title
-        self.author = post.author
+        self.thumbnail = post.thumbnail
+        self.hasThumbnail = self.thumbnail != "self"
+        self.heightForRow = hasThumbnail ? 146 : 44
     }
 }
 

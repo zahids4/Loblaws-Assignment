@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */; };
 		30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBE2322ECBB007381A3 /* PostViewModel.swift */; };
+		30B54CC22322F795007381A3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CC12322F795007381A3 /* PostTableViewCell.swift */; };
 		30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */; };
 		30F1F7C323205BAA001E6B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C123205BAA001E6B9B /* Main.storyboard */; };
 		30F1F7C523205BAE001E6B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C423205BAE001E6B9B /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		1F6E887DA7B09A6CCBACDB42 /* Pods-Loblaws Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loblaws Assignment.release.xcconfig"; path = "Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		30B54CBE2322ECBB007381A3 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		30B54CC12322F795007381A3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		30F1F7BA23205BAA001E6B9B /* Loblaws Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loblaws Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F1F7C223205BAA001E6B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		30B54CBA2322EB29007381A3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30B54CC02322F770007381A3 /* Cells */,
 				30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */,
 			);
 			path = Views;
@@ -66,6 +69,14 @@
 				30B54CBE2322ECBB007381A3 /* PostViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30B54CC02322F770007381A3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				30B54CC12322F795007381A3 /* PostTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		30F1F7B123205BAA001E6B9B = {
@@ -261,6 +272,7 @@
 				30F1F7D323205E04001E6B9B /* UIImageView.swift in Sources */,
 				30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */,
 				30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */,
+				30B54CC22322F795007381A3 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
