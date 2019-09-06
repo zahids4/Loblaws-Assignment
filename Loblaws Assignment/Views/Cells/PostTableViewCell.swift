@@ -15,11 +15,11 @@ class PostTableViewCell: UITableViewCell {
     func configure(with model: PostViewModelProtocol) {
         DispatchQueue.main.async {
             self.titleLabel.text = model.title
-            self.setThumbnailImage(from: model)
+            self.setThumbnailImageIfPresent(from: model)
         }
     }
     
-    fileprivate func setThumbnailImage(from model: PostViewModelProtocol) {
+    fileprivate func setThumbnailImageIfPresent(from model: PostViewModelProtocol) {
         thumbnailImage.image = nil
         if model.hasThumbnail {
             thumbnailImage.setImage(from: model.thumbnail)

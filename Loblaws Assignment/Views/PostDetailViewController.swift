@@ -9,10 +9,11 @@
 import UIKit
 
 class PostDetailViewController: UIViewController {
-    var selectedPost: PostViewModelProtocol!
     @IBOutlet weak var thumbnailImage: UIImageView!
     @IBOutlet weak var postDescription: UITextView!
     @IBOutlet weak var postDescriptionTopConstraint: NSLayoutConstraint!
+    
+    var selectedPost: PostViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,11 +28,15 @@ class PostDetailViewController: UIViewController {
             
             self.title = self.selectedPost.title
             self.postDescription.text = self.selectedPost.postDescription
-            if (self.selectedPost.hasThumbnail) {
-                self.thumbnailImage.setImage(from: self.selectedPost.thumbnail)
-            } else {
-                self.postDescriptionTopConstraint.constant = 20.0
-            }
+            self.setThumbnailImageIfPresent()
+        }
+    }
+    
+    fileprivate func setThumbnailImageIfPresent() {
+        if (selectedPost.hasThumbnail) {
+            thumbnailImage.setImage(from: selectedPost.thumbnail)
+        } else {
+            postDescriptionTopConstraint.constant = 20.0
         }
     }
 }
