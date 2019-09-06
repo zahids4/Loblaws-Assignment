@@ -17,13 +17,19 @@ class PostsTableViewController: UITableViewController {
         }
     }
     
-     override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
+        fetchSubredditData() { subreddit in
+            self.postViewModels = subreddit.posts.map { PostViewModel(post: $0) }
+        }
+    }
+    
+    fileprivate func fetchSubredditData(closure: @escaping (SwiftSubreddit) -> ()) {
         DispatchQueue.global(qos: .userInteractive).async {
             ApiProvider.shared.fetchSwiftSubredditData() { (result: Result<SwiftSubreddit, ApiProvider.APIServiceError>) in
                 switch result {
                 case .success(let subreddit):
-                    self.postViewModels = subreddit.posts.map {PostViewModel(post: $0)}
+                    closure(subreddit)
                 case .failure(let error):
                     print(error.localizedDescription)
                 }
@@ -44,9 +50,9 @@ class PostsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath)
-
-        cell.textLabel!.text = postViewModels[indexPath.row].title
-
+        
+        postViewModels[indexPath.row].configure(cell)
+        
         return cell
     }
  
@@ -60,5 +66,4 @@ class PostsTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
