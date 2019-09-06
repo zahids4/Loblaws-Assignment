@@ -17,6 +17,7 @@ class PostDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = self.selectedPost.title
         configureView()
     }
     
@@ -26,7 +27,6 @@ class PostDetailViewController: UIViewController {
                 return
             }
             
-            self.title = self.selectedPost.title
             self.postDescription.text = self.selectedPost.postDescription
             self.setThumbnailImageIfPresent()
         }
