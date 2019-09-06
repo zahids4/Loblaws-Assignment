@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */; };
+		30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBE2322ECBB007381A3 /* PostViewModel.swift */; };
 		30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */; };
-		30F1F7C023205BAA001E6B9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7BF23205BAA001E6B9B /* ViewController.swift */; };
 		30F1F7C323205BAA001E6B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C123205BAA001E6B9B /* Main.storyboard */; };
 		30F1F7C523205BAE001E6B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C423205BAE001E6B9B /* Assets.xcassets */; };
 		30F1F7C823205BAE001E6B9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C623205BAE001E6B9B /* LaunchScreen.storyboard */; };
@@ -17,12 +18,16 @@
 		30F1F7D423205E04001E6B9B /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D223205E04001E6B9B /* URLSession.swift */; };
 		30F1F7D723205F07001E6B9B /* Swift Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D623205F07001E6B9B /* Swift Subreddit.swift */; };
 		30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D923205FC8001E6B9B /* Post.swift */; };
+		52A3D0DFD1FBA79511C3BD41 /* Pods_Loblaws_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16674BFA303147DBE5BC3638 /* Pods_Loblaws_Assignment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16674BFA303147DBE5BC3638 /* Pods_Loblaws_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loblaws_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F6E887DA7B09A6CCBACDB42 /* Pods-Loblaws Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loblaws Assignment.release.xcconfig"; path = "Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		30B54CBE2322ECBB007381A3 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		30F1F7BA23205BAA001E6B9B /* Loblaws Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loblaws Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		30F1F7BF23205BAA001E6B9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30F1F7C223205BAA001E6B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30F1F7C423205BAE001E6B9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30F1F7C723205BAE001E6B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		30F1F7D223205E04001E6B9B /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		30F1F7D623205F07001E6B9B /* Swift Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift Subreddit.swift"; sourceTree = "<group>"; };
 		30F1F7D923205FC8001E6B9B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		77181C71EA403F8C8EBF5118 /* Pods-Loblaws Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loblaws Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,18 +45,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52A3D0DFD1FBA79511C3BD41 /* Pods_Loblaws_Assignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30B54CBA2322EB29007381A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30B54CBD2322ECA7007381A3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30B54CBE2322ECBB007381A3 /* PostViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		30F1F7B123205BAA001E6B9B = {
 			isa = PBXGroup;
 			children = (
 				30F1F7BC23205BAA001E6B9B /* Loblaws Assignment */,
 				30F1F7BB23205BAA001E6B9B /* Products */,
 				C61D229CCD5D5846780BB0AD /* Pods */,
+				C05FFB86B7FAEDC6600BF292 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,10 +89,11 @@
 		30F1F7BC23205BAA001E6B9B /* Loblaws Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				30B54CBD2322ECA7007381A3 /* ViewModels */,
+				30B54CBA2322EB29007381A3 /* Views */,
 				30F1F7D823205FB3001E6B9B /* Models */,
 				30F1F7D523205E5B001E6B9B /* Extensions */,
 				30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */,
-				30F1F7BF23205BAA001E6B9B /* ViewController.swift */,
 				30F1F7C123205BAA001E6B9B /* Main.storyboard */,
 				30F1F7C423205BAE001E6B9B /* Assets.xcassets */,
 				30F1F7C623205BAE001E6B9B /* LaunchScreen.storyboard */,
@@ -96,9 +121,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C05FFB86B7FAEDC6600BF292 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				16674BFA303147DBE5BC3638 /* Pods_Loblaws_Assignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C61D229CCD5D5846780BB0AD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				77181C71EA403F8C8EBF5118 /* Pods-Loblaws Assignment.debug.xcconfig */,
+				1F6E887DA7B09A6CCBACDB42 /* Pods-Loblaws Assignment.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -110,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30F1F7CC23205BAE001E6B9B /* Build configuration list for PBXNativeTarget "Loblaws Assignment" */;
 			buildPhases = (
+				F7AEA5675D4D4D96CD7CE9B4 /* [CP] Check Pods Manifest.lock */,
 				30F1F7B623205BAA001E6B9B /* Sources */,
 				30F1F7B723205BAA001E6B9B /* Frameworks */,
 				30F1F7B823205BAA001E6B9B /* Resources */,
+				CEA2C858C50CB99D21A6E628 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,15 +206,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CEA2C858C50CB99D21A6E628 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7AEA5675D4D4D96CD7CE9B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Loblaws Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		30F1F7B623205BAA001E6B9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */,
 				30F1F7D423205E04001E6B9B /* URLSession.swift in Sources */,
+				30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */,
 				30F1F7D723205F07001E6B9B /* Swift Subreddit.swift in Sources */,
 				30F1F7D023205D64001E6B9B /* ApiProvider.swift in Sources */,
-				30F1F7C023205BAA001E6B9B /* ViewController.swift in Sources */,
 				30F1F7D323205E04001E6B9B /* UIImageView.swift in Sources */,
 				30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */,
 				30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */,
@@ -324,6 +404,7 @@
 		};
 		30F1F7CD23205BAE001E6B9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77181C71EA403F8C8EBF5118 /* Pods-Loblaws Assignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +423,7 @@
 		};
 		30F1F7CE23205BAE001E6B9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6E887DA7B09A6CCBACDB42 /* Pods-Loblaws Assignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
