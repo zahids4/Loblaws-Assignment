@@ -20,7 +20,7 @@ protocol PostViewModelProtocol: class {
 }
 
 class PostViewModel: PostViewModelProtocol {
-    let post: Post
+    private let post: Post
 
     var title: String!
     var thumbnail: String!

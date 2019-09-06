@@ -18,24 +18,10 @@ class PostsTableViewController: UITableViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchSubredditData() { subreddit in
+        SubredditViewModel().fetchSubredditData() { subreddit in
             self.postViewModels = subreddit.posts.map { PostViewModel(post: $0) }
-        }
-    }
-    
-    fileprivate func fetchSubredditData(closure: @escaping (SwiftSubreddit) -> ()) {
-        DispatchQueue.global(qos: .userInteractive).async {
-            ApiProvider.shared.fetchSwiftSubredditData() { (result: Result<SwiftSubreddit, ApiProvider.APIServiceError>) in
-                switch result {
-                case .success(let subreddit):
-                    closure(subreddit)
-                case .failure(let error):
-                    print(error.localizedDescription)
-                }
-            }
         }
     }
 

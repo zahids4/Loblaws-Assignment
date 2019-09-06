@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302AA969232308DA004E2C6E /* SubredditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302AA968232308DA004E2C6E /* SubredditViewModel.swift */; };
 		30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */; };
 		30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBE2322ECBB007381A3 /* PostViewModel.swift */; };
 		30B54CC22322F795007381A3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CC12322F795007381A3 /* PostTableViewCell.swift */; };
@@ -18,7 +19,7 @@
 		30F1F7D023205D64001E6B9B /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7CF23205D64001E6B9B /* ApiProvider.swift */; };
 		30F1F7D323205E04001E6B9B /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D123205E04001E6B9B /* UIImageView.swift */; };
 		30F1F7D423205E04001E6B9B /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D223205E04001E6B9B /* URLSession.swift */; };
-		30F1F7D723205F07001E6B9B /* Swift Subreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D623205F07001E6B9B /* Swift Subreddit.swift */; };
+		30F1F7D723205F07001E6B9B /* SwiftSubreddit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D623205F07001E6B9B /* SwiftSubreddit.swift */; };
 		30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7D923205FC8001E6B9B /* Post.swift */; };
 		52A3D0DFD1FBA79511C3BD41 /* Pods_Loblaws_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16674BFA303147DBE5BC3638 /* Pods_Loblaws_Assignment.framework */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		16674BFA303147DBE5BC3638 /* Pods_Loblaws_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Loblaws_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6E887DA7B09A6CCBACDB42 /* Pods-Loblaws Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loblaws Assignment.release.xcconfig"; path = "Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		302AA968232308DA004E2C6E /* SubredditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubredditViewModel.swift; sourceTree = "<group>"; };
 		30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		30B54CBE2322ECBB007381A3 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		30B54CC12322F795007381A3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 		30F1F7CF23205D64001E6B9B /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		30F1F7D123205E04001E6B9B /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		30F1F7D223205E04001E6B9B /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
-		30F1F7D623205F07001E6B9B /* Swift Subreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift Subreddit.swift"; sourceTree = "<group>"; };
+		30F1F7D623205F07001E6B9B /* SwiftSubreddit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSubreddit.swift; sourceTree = "<group>"; };
 		30F1F7D923205FC8001E6B9B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		77181C71EA403F8C8EBF5118 /* Pods-Loblaws Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Loblaws Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Loblaws Assignment/Pods-Loblaws Assignment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				30B54CBE2322ECBB007381A3 /* PostViewModel.swift */,
+				302AA968232308DA004E2C6E /* SubredditViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -129,7 +132,7 @@
 		30F1F7D823205FB3001E6B9B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				30F1F7D623205F07001E6B9B /* Swift Subreddit.swift */,
+				30F1F7D623205F07001E6B9B /* SwiftSubreddit.swift */,
 				30F1F7D923205FC8001E6B9B /* Post.swift */,
 			);
 			path = Models;
@@ -269,8 +272,9 @@
 			files = (
 				30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */,
 				30F1F7D423205E04001E6B9B /* URLSession.swift in Sources */,
+				302AA969232308DA004E2C6E /* SubredditViewModel.swift in Sources */,
 				30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */,
-				30F1F7D723205F07001E6B9B /* Swift Subreddit.swift in Sources */,
+				30F1F7D723205F07001E6B9B /* SwiftSubreddit.swift in Sources */,
 				30F1F7D023205D64001E6B9B /* ApiProvider.swift in Sources */,
 				30F1F7D323205E04001E6B9B /* UIImageView.swift in Sources */,
 				30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */,
