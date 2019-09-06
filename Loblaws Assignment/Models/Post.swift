@@ -11,11 +11,15 @@ import Foundation
 public struct Post: Decodable {
     public let title: String
     public let thumbnail: String
+    public let url: String
+    public let description: String
     
     enum CodingKeys: String, CodingKey {
         case data = "data"
         case title = "title"
         case thumbnail = "thumbnail"
+        case url = "url"
+        case description = "selftext"
     }
     
     public init(from decoder: Decoder) throws {
@@ -23,5 +27,7 @@ public struct Post: Decodable {
         let data = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .data)
         title = try data.decode(String.self, forKey: .title)
         thumbnail = try data.decode(String.self, forKey: .thumbnail)
+        url = try data.decode(String.self, forKey: .url)
+        description = try data.decode(String.self, forKey: .description)
     }
 }

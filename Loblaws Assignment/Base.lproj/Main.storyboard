@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Swift Subreddit-->
+        <!--Swift News-->
         <scene sceneID="Tws-Ni-UgO">
             <objects>
                 <tableViewController id="r7s-KU-8Hb" customClass="PostsTableViewController" customModule="Loblaws_Assignment" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,11 +61,60 @@
                             <outlet property="delegate" destination="r7s-KU-8Hb" id="CX0-wo-hNS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Swift Subreddit" id="iNM-TJ-vFu"/>
+                    <navigationItem key="navigationItem" title="Swift News" id="iNM-TJ-vFu"/>
+                    <connections>
+                        <segue destination="pME-QR-Hen" kind="show" identifier="showPostDetailView" id="wu6-hs-Nvs"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpA-Du-AUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="531.8840579710145" y="104.46428571428571"/>
+        </scene>
+        <!--Post Detail View Controller-->
+        <scene sceneID="IzO-0S-vPP">
+            <objects>
+                <viewController id="pME-QR-Hen" customClass="PostDetailViewController" customModule="Loblaws_Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gh5-ef-N5B">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-sm-x30">
+                                <rect key="frame" x="132" y="108" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="0ZG-bf-l6Q"/>
+                                    <constraint firstAttribute="height" constant="150" id="Fw1-IZ-Wpv"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNb-os-aCy">
+                                <rect key="frame" x="20" y="266" width="374" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="375" id="zYF-rb-TqZ"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZZk-sm-x30" firstAttribute="centerX" secondItem="Gh5-ef-N5B" secondAttribute="centerX" id="8ll-in-U0h"/>
+                            <constraint firstItem="hNb-os-aCy" firstAttribute="leading" secondItem="g6T-Jg-saK" secondAttribute="leading" constant="20" id="BDs-ZN-PYz"/>
+                            <constraint firstItem="hNb-os-aCy" firstAttribute="top" secondItem="Gh5-ef-N5B" secondAttribute="topMargin" constant="178" id="Yyr-r3-Mpm"/>
+                            <constraint firstItem="ZZk-sm-x30" firstAttribute="top" secondItem="g6T-Jg-saK" secondAttribute="top" constant="20" id="dRY-g4-aGz"/>
+                            <constraint firstItem="g6T-Jg-saK" firstAttribute="trailing" secondItem="hNb-os-aCy" secondAttribute="trailing" constant="20" id="rHc-BJ-vCd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g6T-Jg-saK"/>
+                    </view>
+                    <connections>
+                        <outlet property="postDescription" destination="hNb-os-aCy" id="QRx-rB-pFr"/>
+                        <outlet property="postDescriptionTopConstraint" destination="Yyr-r3-Mpm" id="vQi-Zu-iP2"/>
+                        <outlet property="thumbnailImage" destination="ZZk-sm-x30" id="b5v-cz-god"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxg-OR-oVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="103.79464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UkJ-Nz-b2S">

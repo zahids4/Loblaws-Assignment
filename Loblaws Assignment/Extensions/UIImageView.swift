@@ -10,7 +10,10 @@ import UIKit
 
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
-        contentMode = mode
+        DispatchQueue.main.async {
+            self.contentMode = mode
+        }
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
@@ -26,6 +29,8 @@ extension UIImageView {
     
     func setImage(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.downloaded(from: url, contentMode: mode)
+        }
     }
 }

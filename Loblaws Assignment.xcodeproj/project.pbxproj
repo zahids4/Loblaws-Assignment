@@ -10,6 +10,7 @@
 		30B54CBC2322EB8A007381A3 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */; };
 		30B54CBF2322ECBB007381A3 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CBE2322ECBB007381A3 /* PostViewModel.swift */; };
 		30B54CC22322F795007381A3 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CC12322F795007381A3 /* PostTableViewCell.swift */; };
+		30B54CC42322FD66007381A3 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B54CC32322FD66007381A3 /* PostDetailViewController.swift */; };
 		30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */; };
 		30F1F7C323205BAA001E6B9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C123205BAA001E6B9B /* Main.storyboard */; };
 		30F1F7C523205BAE001E6B9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30F1F7C423205BAE001E6B9B /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		30B54CBE2322ECBB007381A3 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 		30B54CC12322F795007381A3 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		30B54CC32322FD66007381A3 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		30F1F7BA23205BAA001E6B9B /* Loblaws Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Loblaws Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F1F7BD23205BAA001E6B9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30F1F7C223205BAA001E6B9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			children = (
 				30B54CC02322F770007381A3 /* Cells */,
 				30B54CBB2322EB8A007381A3 /* PostsTableViewController.swift */,
+				30B54CC32322FD66007381A3 /* PostDetailViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				30F1F7D023205D64001E6B9B /* ApiProvider.swift in Sources */,
 				30F1F7D323205E04001E6B9B /* UIImageView.swift in Sources */,
 				30F1F7DA23205FC8001E6B9B /* Post.swift in Sources */,
+				30B54CC42322FD66007381A3 /* PostDetailViewController.swift in Sources */,
 				30F1F7BE23205BAA001E6B9B /* AppDelegate.swift in Sources */,
 				30B54CC22322F795007381A3 /* PostTableViewCell.swift in Sources */,
 			);
