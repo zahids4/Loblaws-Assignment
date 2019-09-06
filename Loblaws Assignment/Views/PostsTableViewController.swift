@@ -68,8 +68,6 @@ class PostsTableViewController: UITableViewController {
             self.performSegue(withIdentifier: "showPostDetailView", sender: self)
         }
     }
- 
-
     
     // MARK: - Navigation
 

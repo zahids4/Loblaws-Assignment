@@ -13,7 +13,14 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var thumbnailImage: UIImageView!
     
     func configure(with model: PostViewModelProtocol) {
-        titleLabel.text = model.title
+        DispatchQueue.main.async {
+            self.titleLabel.text = model.title
+            self.setThumbnailImage(from: model)
+        }
+    }
+    
+    fileprivate func setThumbnailImage(from model: PostViewModelProtocol) {
+        thumbnailImage.image = nil
         if model.hasThumbnail {
             thumbnailImage.setImage(from: model.thumbnail)
         }

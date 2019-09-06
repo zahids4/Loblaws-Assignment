@@ -34,7 +34,7 @@ class PostViewModel: PostViewModelProtocol {
         self.post = post
         self.title = post.title
         self.thumbnail = post.thumbnail
-        self.hasThumbnail = self.thumbnail != "self"
+        self.hasThumbnail = !(self.thumbnail == "self" || self.thumbnail == "default")
         self.heightForRow = hasThumbnail ? 146 : 44
         self.url = post.url
         self.description = post.description
